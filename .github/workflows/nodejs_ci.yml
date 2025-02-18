@@ -24,7 +24,7 @@ jobs:
 
       # Step to cache Node.js dependencies
       - name: Cache Node.js dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('${{ env.OUTPUT_PATH }}/package-lock.json') }}
